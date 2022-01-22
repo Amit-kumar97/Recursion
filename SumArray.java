@@ -1,22 +1,39 @@
 import java.util.Scanner;
 
+/*
+A program to find and return the sum of all elements of the array. Do this recursively.
+Sample Input 1 :
+3
+9 8 9
+Sample Output 1 :
+26
+Sample Input 2 :
+3
+4 2 1
+Sample Output 2 :
+7 
+ */
 public class SumArray {
+    //-----------Declaring integer Variable and Array of type Integer
     int n;
     int ar[];
+    //-----------Constructor
     SumArray()
     {
         this.n = n;
         ar = new int[n];
     }
+    //------------Method here to implement the logic
     public static int sumarray(int n,int ar[])
     {
-        if(n<=0)
+        if(n<=0)                                        //------------Base condition
         {
             return 0;
         }
-        return ar[n-1]+sumarray(n-1,ar);
+        return ar[n-1]+sumarray(n-1,ar);                //-------------Recursive Call, sum calculated from last
     }
 }
+//------------------Execution Class
 class sumarraytest
 {
     public static void main(String[] args) {
