@@ -1,6 +1,7 @@
 //----------Code snippet 02
 
 public class Problem_1Q_02 {
+    
     public static void print(int n)
     {
         if(n<0)
